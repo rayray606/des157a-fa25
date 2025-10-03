@@ -11,7 +11,18 @@
 
     <script>
 
-
+var experiment = "This is my experiment for JavaScript"; 
+var result = "";
+    console.log("" + experiment);
+    for (var i = 0; i < experiment.length; i++) {
+      var letter = experiment.charAt(i);
+      if (i % 2 === 0) {
+        result = result + letter.toUpperCase();
+      } else {
+        result = result + letter.toLowerCase();
+      }
+    }
+    console.log("" + result);
 
 
 
