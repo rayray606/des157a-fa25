@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2: Color Mixing Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            color: #4b0082;
+        }
+        .correct { color: green; }
+        .incorrect { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Color Mixing Quiz</h1>
+    <p>Test your knowledge of color mixing!</p>
+
+    <script>
+
+        var questions = ["orange", "green", "purple"];
+        var answers = [
+            ["red", "yellow"],
+            ["blue", "yellow"],
+            ["red", "blue"]
+        ];
+
+        function getAnswers() {
+            var responses = [];
+            for (var i = 0; i < questions.length; i++) {
+                var reply = prompt("Which two colors make " + questions[i] + "? (separate with a comma)");
+                responses.push(reply.toLowerCase().split(",").map(function(c) {
+                    return c.trim();
+                }));
+            }
+            return responses;
+        }
+
+        function checkAnswers(responses) {
+            var score = 0;
+            for (var i = 0; i < responses.length; i++) {
+                var correct = answers[i].sort().toString();
+                var user = responses[i].sort().toString();
+                if (correct === user) {
+                    score++;
+                }
+            }
+            return score;
+        }
+
+        function showResults(score, responses) {
+            document.write("You got " + score + " out of " + questions.length + " correct!");
+            for (var i = 0; i < questions.length; i++) {
+                var correct = answers[i].join(" + ");
+                var user = responses[i].join(" + ");
+                if (answers[i].sort().toString() === responses[i].sort().toString()) {
+                    document.write("<p class='correct'> " + questions[i] + ": " + user + " (Correct!)</p>");
+                } else {
+                    document.write("<p class='incorrect'> " + questions[i] + ": " + user + " (Answer: " + correct + ")</p>");
+                }
+            }
+        }
+
+        var responses = getAnswers();
+        var score = checkAnswers(responses);
+        showResults(score, responses);
+    </script>
+</body>
+</html>
