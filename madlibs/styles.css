@@ -1,4 +1,4 @@
-.kranky-regular {
+/* .kranky-regular {
   font-family: "Kranky", serif;
   font-weight: 400;
   font-style: normal;
@@ -10,49 +10,80 @@
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+} */
+
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+.outfit-uniquifier {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 body {
-  background-color: #dbdeb9;
-  margin: 40px;
-  color: #333;
-  font-family: "Winky Sans", sans-serif;
-  font-weight: 400;
+  font-family: "Outfit", sans-serif;
+  background-color: #fafafa;
+  color: #222;
   line-height: 1.6;
+  margin: 0 auto;
+  max-width: 50ch;
+  padding: 2em;
+
 }
 
 h1 {
-  font-family: "Kranky", serif;
-  font-weight: 350;
+  font-family: "DM Serif Text", serif;
   font-size: 2.5em;
   text-align: center;
-  color: #937cdd;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
+  color: #222;
 }
 
-p {
-  font-family: "Winky Sans", sans-serif;
-  font-size: 20px;
-  margin-bottom: 16px;
+h2 {
+  font-family: "DM Serif Text", serif;
+  font-size: 1.6em;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+  color: #333;
 }
+
 
 img {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
-
-ul {
-  font-family: "Winky Sans", sans-serif;
-  font-size: 1.1em;
-  padding-left: 40px;
-}
-
-li {
-  margin-bottom: 8px;
+  width: 500px;
+  border-radius: 10px;
 }
 
 
+p {
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #003366;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 3rem;
+}
