@@ -87,3 +87,7 @@ footer {
   color: #555;
   margin-top: 3rem;
 }
+
+.block {
+  display: block;
+}
