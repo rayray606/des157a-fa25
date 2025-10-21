@@ -1,46 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Version 2</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comic+Relief&family=Jua&family=Kranky&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"> -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Version 2</title>
 
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
 
 <style>
+body {
+background-color: #fffbe7;
+font-family: "DM Serif Text", serif;
+}
+
 .textbox { 
-  border: 2px solid black;
-  background-color: #f7ffbe;
-  width: 400px;
-  padding: 20px;
-  margin: 20px auto;
-  text-align: center;
-  border-radius: 6px;
-  margin-top: 150px;
+position: relative;
+border: 10px solid rgb(90, 63, 62);
+background-color: #f7ffbe;
+width: 900px;
+padding: 60px 20px;
+margin: 150px auto;
+text-align: center;
+border-radius: 16px;
+box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
-img{
-    height: auto;
-    width: 150px;
+.textbox img {
+position: absolute;
+width: 100px;
+height: auto;
 }
+
+.chiikawa {
+top: -50px;
+left: -50px;
+}
+
+.hachiware {
+top: -50px;
+right: -50px;
+}
+
+.momonga {
+bottom: -50px;
+left: -50px;
+}
+
+.usagi {
+bottom: -50px;
+right: -50px;
+}
+
+button {
+margin-top: 20px;
+padding: 10px 20px;
+font-size: 1rem;
+border-radius: 10px;
+border: none;
+background-color: rgb(90, 63, 62);
+color: #fff;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #a4b365;
+}
+  
 </style>
-
 </head>
+
 <body>
-    <img src = 'images/chiikawa.PNG'>
-    <div class="textbox"><h1>Help Chiikawa make a wishlist!</h1>
-        <button>Start!</button></div>
-    
+  <div class="textbox">
+    <img src="images/chiikawa.PNG" class="chiikawa">
+    <img src="images/hachiware.PNG" class="hachiware">
+    <img src="images/momonga.PNG" class="momonga">
+    <img src="images/usagi.PNG" class="usagi">
+
+    <h1>Help Chiikawa make a wishlist!</h1>
+    <p>Fill in the blanks below:</p>
+
+  <input class="adj1" type="text" placeholder="Adjective">
+  <input class="adj2" type="text" placeholder="Adjective">
+  <input class="adj3" type="text" placeholder="Adjective">
+  <input class="adj4" type="text" placeholder="Adjective">
+  <input class="verb1" type="text" placeholder="Verb-ing">
+  <input class="verb2" type="text" placeholder="Verb-ing">
+  <input class="verb3" type="text" placeholder="Verb-ing">
+  <input class="noun" type="text" placeholder="Noun">
+  <input class="food" type="text" placeholder="Food noun">
+  <input class="present" type="text" placeholder="Present">
+  <input class="adverb" type="text" placeholder="Adverb">
+
+  <br>
+  <button class="start">Start!</button>
+
+  <div id="story"></div>
+</div>
+
+<!-- <script>
+document.querySelector(".start").addEventListener("click", () => {
+  const adj1 = document.querySelector(".adj1").value;
+  const adj2 = document.querySelector(".adj2").value;
+  const adj3 = document.querySelector(".adj3").value;
+  const adj4 = document.querySelector(".adj4").value;
+  const verb1 = document.querySelector(".verb1").value;
+  const verb2 = document.querySelector(".verb2").value;
+  const verb3 = document.querySelector(".verb3").value;
+  const noun = document.querySelector(".noun").value;
+  const food = document.querySelector(".food").value;
+  const present = document.querySelector(".present").value;
+  const adverb = document.querySelector(".adverb").value;
+
+const story = `Chiikawa is a(n) ${adj1}, ${adj2} creature. Their friends Hachiware and Usagi go on ${adj3} adventures; ${verb1}, ${verb2} delicious food, ${verb3} monsters. 
+They try to enjoy their ${adj4} life. Chiikawa tends to feel anxious. Help make a wishlist with them:
+1. Study for the ${noun} certification
+2. Pass the ${noun} certification
+3. Cook ${food}
+4. Buy ${present} for friends
+5. Order food ${adverb}`;
+
+  document.querySelector("#story").innerText = story;
+});
+</script> -->
 
 
-</style>
-    
 </body>
 </html>
