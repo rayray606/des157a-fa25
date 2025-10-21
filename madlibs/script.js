@@ -28,4 +28,4 @@ They try to enjoy their ${adj4} life. Chiikawa tends to feel anxious. Help make 
 });
     
 
-}());
+})()
