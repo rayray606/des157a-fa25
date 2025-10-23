@@ -1,0 +1,93 @@
+/* .kranky-regular {
+  font-family: "Kranky", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.winky-sans-uniquifier {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+} */
+
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+.outfit-uniquifier {
+  font-family: "Outfit", sans-serif;
+  /* font-optical-sizing: auto;
+  font-weight: weight; */
+  font-style: normal;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 50ch;
+  padding: 2em;
+
+}
+
+h1 {
+  font-family: "DM Serif Text", serif;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 1em;
+  color: #222;
+}
+
+h2 {
+  font-family: "DM Serif Text", serif;
+  font-size: 1.6em;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+  color: #333;
+}
+
+
+img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+
+p {
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #003366;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 3rem;
+}
+
+.block {
+  display: block;
+}
