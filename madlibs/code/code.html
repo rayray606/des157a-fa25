@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Code Version 1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Relief&family=Jua&family=Kranky&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<script src="script.js" defer></script>
+
+
+</head>
+
+<body>
+  <div class="textbox">
+    <img src="images/chiikawa.PNG" class="chiikawa" alt="one">
+    <img src="images/hachiware.PNG" class="hachiware" alt="two">
+    <img src="images/momonga.PNG" class="momonga" alt="three">
+    <img src="images/usagi.PNG" class="usagi" alt="four">
+
+    <h1>Help Chiikawa make a wishlist!</h1>
+    <p>Fill in the blanks below:</p>
+
+  <input class="adj1" type="text" placeholder="Adjective">
+  <input class="adj2" type="text" placeholder="Adjective">
+  <input class="adj3" type="text" placeholder="Adjective">
+  <input class="adj4" type="text" placeholder="Adjective">
+  <input class="verb1" type="text" placeholder="Verb-ing">
+  <input class="verb2" type="text" placeholder="Verb-ing">
+  <input class="noun" type="text" placeholder="Noun">
+  <input class="food" type="text" placeholder="Food noun">
+  <input class="present" type="text" placeholder="Present">
+  <input class="adverb" type="text" placeholder="Adverb">
+
+  <br>
+  <button class="start">Start!</button>
+
+  <div id="story"></div>
+</div>
+
+<!-- <script>
+document.querySelector(".start").addEventListener("click", () => {
+  const adj1 = document.querySelector(".adj1").value;
+  const adj2 = document.querySelector(".adj2").value;
+  const adj3 = document.querySelector(".adj3").value;
+  const adj4 = document.querySelector(".adj4").value;
+  const verb1 = document.querySelector(".verb1").value;
+  const verb2 = document.querySelector(".verb2").value;
+  const verb3 = document.querySelector(".verb3").value;
+  const noun = document.querySelector(".noun").value;
+  const food = document.querySelector(".food").value;
+  const present = document.querySelector(".present").value;
+  const adverb = document.querySelector(".adverb").value;
+
+const story = `Chiikawa is a(n) ${adj1}, ${adj2} creature. Their friends Hachiware and Usagi go on ${adj3} adventures; ${verb1}, ${verb2} delicious food, ${verb3} monsters. 
+They try to enjoy their ${adj4} life. Chiikawa tends to feel anxious. Help make a wishlist with them:
+1. Study for the ${noun} certification
+2. Pass the ${noun} certification
+3. Cook ${food}
+4. Buy ${present} for friends
+5. Order food ${adverb}`;
+
+  document.querySelector("#story").innerText = story;
+});
+</script> -->
+
+
+</body>
+</html>

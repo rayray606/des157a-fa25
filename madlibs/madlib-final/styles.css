@@ -1,0 +1,88 @@
+.kranky-regular {
+  font-family: "Kranky", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.winky-sans-uniquifier {
+  font-family: "Winky Sans", sans-serif;
+  /* font-optical-sizing: auto;
+  font-weight: weight; */
+  font-style: normal;
+}
+
+
+body {
+  font-family: "Winky Sans", sans-serif;
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(2) rotate(30)'><rect x='0' y='0' width='100%' height='100%' fill='%23f8f1b2ff'/><path d='M23.222 25.097l-3.266-2.056-3.219 2.058.983-3.847-3.042-2.503 3.936-.18 1.52-3.668 1.342 3.578 3.846.312-2.996 2.505z'  stroke-width='1' stroke='none' fill='%23ffd342ff'/><path d='M.133-5.1l-1.52 3.668-3.935.18 3.043 2.504-.985 3.848L-.043 3.04l3.264 2.057-.895-3.803L5.322-1.21l-3.845-.312L.133-5.1zm40 0l-1.52 3.668-3.935.18 3.043 2.504-.985 3.848 3.221-2.059 3.264 2.057-.895-3.803 2.996-2.504-3.845-.312L40.133-5.1zm-40 40l-1.52 3.668-3.935.18 3.043 2.504-.985 3.848 3.221-2.059 3.264 2.057-.895-3.803 2.996-2.504-3.845-.312L.133 34.9zm40 0l-1.52 3.668-3.935.18 3.043 2.504-.985 3.848 3.221-2.059 3.264 2.057-.895-3.803 2.996-2.504-3.845-.312-1.344-3.579z'  stroke-width='1' stroke='none' fill='%23ffd342ff'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+
+  color: #222;
+  line-height: 1.6;
+  margin: 0;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Kranky", serif;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+  color: #222;
+}
+
+.textbox { 
+  position: relative;
+  border: 6px solid rgb(90, 63, 62);
+  background-color: #f7ffbe;
+  width: 90%;
+  max-width: 500px;
+  padding: 40px 20px;
+  margin: 80px auto;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.textbox img {
+  position: absolute;
+  width: 90px;
+  height: auto;
+}
+
+.chiikawa { top: -30px; left: -30px; }
+.hachiware { top: -30px; right: -30px; }
+.momonga { bottom: -30px; left: -30px; }
+.usagi { bottom: -30px; right: -30px; }
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(90, 63, 62);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a4b365;
+}
+
+input {
+font-family: 'winky sans';
+margin: 5px 0;
+border-radius: 5px;
+border: 1px solid #ccc;
+width: 200px;
+}
+
+.highlight {
+color: rgb(159, 94, 255);
+padding: 2px 4px;
+border-radius: 3px;
+}

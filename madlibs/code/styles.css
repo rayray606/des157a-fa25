@@ -1,0 +1,73 @@
+.kranky-regular {
+  font-family: "Kranky", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.winky-sans-uniquifier {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+body {
+  font-family: "Winky Sans", sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  line-height: 1.6;
+  margin: 0;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Kranky", serif;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+  color: #222;
+}
+
+.textbox { 
+  position: relative;
+  border: 6px solid rgb(90, 63, 62);
+  background-color: #f7ffbe;
+  width: 90%;
+  max-width: 500px;
+  padding: 40px 20px;
+  margin: 80px auto;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.textbox img {
+  position: absolute;
+  width: 90px;
+  height: auto;
+}
+
+.chiikawa { top: -30px; left: -30px; }
+.hachiware { top: -30px; right: -30px; }
+.momonga { bottom: -30px; left: -30px; }
+.usagi { bottom: -30px; right: -30px; }
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(90, 63, 62);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a4b365;
+}
