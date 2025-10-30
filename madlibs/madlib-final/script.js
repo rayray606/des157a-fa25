@@ -14,7 +14,7 @@
   const verb2 = document.querySelector(".verb2").value;
   const noun = document.querySelector(".noun").value;
   const food = document.querySelector(".food").value;
-  const present = document.querySelector(".present").value;
+  const gift = document.querySelector(".gift").value;
   const adverb = document.querySelector(".adverb").value;
 
     if (!adj1 || !adj2 || !adj3 || !adj4 || !verb1 || !verb2 || !noun || !food || !present || !adverb) {
@@ -22,11 +22,11 @@
       return;
     }
 
-    const story = `Chiikawa is a(n) <span class="highlight">${adj1}</span>, <span class="highlight">${adj2}</span> creature. Their friends Hachiware and Usagi go on v${adj3}</span> adventures; <span class="highlight">${verb1}</span>, eating <span class="highlight">${adj4}</span> food, <span class="highlight">${verb2}</span> monsters. Chiikawa tends to feel anxious. Help make a wishlist with them:
+    const story = `Chiikawa is a(n) <span class="highlight">${adj1}</span>, <span class="highlight">${adj2}</span> creature. Their friends Hachiware and Usagi go on a(n) <span class="highlight">${adj3}</span> adventures; <span class="highlight">${verb1}</span>, eating <span class="highlight">${adj4}</span> food, <span class="highlight">${verb2}</span> monsters. Chiikawa tends to feel anxious. Help make a wishlist with them:
 1. Study for the <span class="highlight">${noun}</span> certification
 2. Pass the <span class="highlight">${noun}</span> certification
 3. Cook <span class="highlight">${food}</span>
-4. Buy <span class="highlight">${present}</span> for friends
+4. Buy <span class="highlight">${gift}</span> for friends
 5. Order food <span class="highlight">${adverb}</span>`;
 
  storyBox.innerHTML = story;
