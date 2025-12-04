@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Game</title>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="styles.css" rel="stylesheet">
+
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Monster Battle!</h1>
+    <section id="game">
+        <div>
+            <img src="images/magical.png" alt="magical" width="300" height="300" id="Billmon">
+            <h2>Chiikawa and Friends</h2>
+            <div class="health">
+                <div id="healthbar0"><div></div></div><p id="monsterhealth0">100%</p>
+            </div>
+        </div>
+        <div>
+            <img src="images/villians.png" alt="villians" width="300" height="300" id="Glendamon">
+            <h2>Bad Chiikawas</h2>
+            <div class="health">
+                <div id="healthbar1"><div></div></div><p id="monsterhealth1">100%</p>
+            </div>
+        </div>
+    </section>
+    <section id="action">
+        <div id="messages">
+            <p>Press the start button to randomly select the first monster to attack!</p>
+            <button id="start">Start Battle!</button>
+        </div>
+        <button id="attack" class="hidden">Attack!</button>
+    </section>
+    
+</body>
+</html>
