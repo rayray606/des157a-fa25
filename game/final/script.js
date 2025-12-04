@@ -6,8 +6,12 @@
     const monster1 = document.getElementById('Chiikawa and Friends');
     const monster2 = document.getElementById('Chiikawas');
     const messages = document.querySelector('#messages');
+
     const startBtn = document.querySelector('#start');
+    const startSound = new Audio('sounds/start.mp3');
+
     const attackBtn = document.querySelector('#attack');
+    const attackSound = new Audio('sounds/action.mp3');
 
     let attacker;
     let defender;
@@ -31,6 +35,14 @@
         ],
         index: 0
     };
+
+    startBtn.addEventListener('click', function(){
+        startSound.play();
+    });
+
+    attackBtn.addEventListener('click', function(){
+        attackSound.play();
+    });
 
     // Start button
     startBtn.addEventListener('click', function(){
